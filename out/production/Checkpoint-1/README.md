@@ -36,7 +36,7 @@ Create a static method named *hasLegalAge*, which returns "true" if the age pass
 
 You have to divide the students in a class into two groups. Each student has a number and you want to use this data to assign them to either group A or B.
 
-Create a static method called *getGroup*, which takes in a student's number. If this is even, return the character 'A', otherwise return the character 'B'.
+Create a static method called *giveGroup*, which takes in a student's number. If this is even, return the character 'A', otherwise return the character 'B'.
 
 ### 3. Cleaning data
 
