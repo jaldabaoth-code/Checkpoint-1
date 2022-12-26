@@ -25,3 +25,71 @@ footer {
 }
 
 /* Your code here */
+li {
+    display: flex;
+    margin: 10px;
+}
+
+nav > ul {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+a {
+    color: black;
+}
+h1, h2 {
+    text-align: center;
+}
+
+.apply-now {
+    background-color: #F76C6C;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.articles {
+    display: flex;
+    justify-content: space-around;
+}
+footer {
+    background-color: #39424E;
+    text-align: center;
+
+}
+
+footer > li {
+    color: white;
+}
+
+footer > section {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-title {
+    font-weight: bold;
+    color: white;
+}
+.footer-link > a, section > p {
+    color: white;
+}
+article {
+    width: 30%;
+}
+
+article > img {
+
+    margin:auto;
+    display:flex;
+}
+
+article > h3 {
+    text-align: center;
+}
