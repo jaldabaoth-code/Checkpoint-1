@@ -3,93 +3,207 @@ html {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6em;
 }
+
 body, h1, h2, h3, ul, li, a, p {
     margin: 0;
     padding: 0;
 }
+
 h2, h3 {
     font-size: 1em;
 }
+
 a {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 article p {
     font-size: 0.8em;
     padding: 10px;
 }
+
 footer {
     font-size: 0.8em;
 }
 
 /* Your code here */
-li {
+
+header > section {
     display: flex;
+    justify-content: space-between;
+}
+
+header > section > a {
     margin: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav > ul {
     display: flex;
 }
 
-.menu {
+nav > ul > li {
     display: flex;
-    justify-content: space-between;
-    margin: 10px;
+    margin: 6px;
 }
-a {
+
+nav > ul > li> a {
     color: black;
 }
+
 h1, h2 {
+    text-align: center;
+}
+
+.head {
     text-align: center;
 }
 
 .apply-now {
     background-color: #F76C6C;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
+
 .articles {
     display: flex;
     justify-content: space-around;
-}
-footer {
-    background-color: #39424E;
-    text-align: center;
-
+    margin-bottom: 20px;
 }
 
-footer > li {
-    color: white;
-}
-
-footer > section {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-.footer-title {
-    font-weight: bold;
-    color: white;
-}
-.footer-link > a, section > p {
-    color: white;
-}
 article {
-    width: 30%;
+    width: 32%;
 }
 
 article > img {
-
     margin:auto;
     display:flex;
 }
 
 article > h3 {
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #39424E;
+    text-align: center;
+}
+
+footer > section > ul  > li {
+    display: flex;
+}
+
+footer > section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+footer > li {
+    color: white;
+}
+
+.footer-title {
+    font-weight: bold;
+    color: white;
+}
+
+.footer-link > a, section > p {
+    color: white;
+}
+
+section > p {
+    color: white;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    header > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-bottom: 20px;
+    }
+
+    nav > ul > li {
+        font-size: 1em;
+        display: inline;
+        /*margin: 15px*/
+        /*margin: 10;*/
+    }
+
+    nav > ul  {
+        display: inline;
+        text-align: center;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .articles {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article > img {
+        margin: 0;
+    }
+
+    article > h3 {
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    article p {
+        font-size: 0.8em;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    footer > section {
+        display: inline;
+
+    }
+
+    footer > section > ul {
+        padding-top: 10px;
+        line-break: auto;
+    }
+
+    footer > section > ul > li {
+        display: flex;
+        justify-content: center;
+    }
+
+    section > p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
